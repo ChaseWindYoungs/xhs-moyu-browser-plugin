@@ -7,7 +7,8 @@
     {  
       "matches": ["https://www.xiaohongshu.com/*"],  
       "js": ["index.js"],  
-      "run_at": "document_start"
+      "run_at": "document_start",
+      "css": ["style/index.css"]
     }  
   ]  
 }

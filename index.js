@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   elements.forEach((element) => {  
     element.style.display = 'none';  
   });
+  const app = document.getElementById('app');  
+  app.classList.add('xhs-moyu-plugin');
   hideImgs()
   // watchChange()
   containerContentChange()
@@ -16,7 +18,8 @@ function hideImgs() {
     let imgs = imgsList.getElementsByClassName('note-item')
     if(imgs.length > 0) {
       [...imgs].forEach(i => {
-        let imgContainer = i.getElementsByClassName('cover');  
+        let imgContainer = i.getElementsByClassName('cover');
+        imgContainer[0].classList.add('xhs-m-p_imgContainer');
         let img = imgContainer[0].getElementsByTagName('img')
         opacity0(img[0])
         addBorder(imgContainer[0])

@@ -1,0 +1,6 @@
+.xhs-moyu-plugin {
+  background-color: red;
+}
+.xhs-moyu-plugin .xhs-m-p_imgContainer:hover img {
+  opacity: 1!important;
+}
